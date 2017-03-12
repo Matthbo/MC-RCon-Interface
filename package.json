@@ -1,0 +1,15 @@
+{
+  "name": "rcon-interface",
+  "version": "1.0.0",
+  "description": "An RCON interface for Minecraft",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "minecraft",
+    "rcon"
+  ],
+  "author": "Matthbo",
+  "license": "UNLICENSED"
+}
