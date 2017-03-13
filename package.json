@@ -11,5 +11,8 @@
     "rcon"
   ],
   "author": "Matthbo",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
