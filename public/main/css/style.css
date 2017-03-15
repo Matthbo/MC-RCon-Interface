@@ -1,3 +1,8 @@
+@keyframes bg-block-img {
+	0%	{transform: translate(-50%, -60%);}
+	100%{transform: translate(-50%, -40%);}
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -17,7 +22,26 @@ header {
 	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
 }
 
+section .bg-block {
+	z-index: -1;
+}
+
+section .bg-block #img {
+	width: 128px;
+	height: 128px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: bg-block-img 3s alternate infinite;
+	background: url('/img/block.png');
+}
+
 footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	padding: 10px;
 	text-align: center;
 	color: #fff;
