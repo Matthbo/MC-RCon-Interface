@@ -13,6 +13,7 @@ module.exports = function(){
 	server.use(express.static('./public/admin'));
 
 	require('./app/admin/routes/index.routes')(server);
+	require('./app/admin/routes/settings.routes')(server);
 
 	return server;
 }

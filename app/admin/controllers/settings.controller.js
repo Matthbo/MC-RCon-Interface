@@ -1,6 +1,6 @@
 exports.render = function(req, res){
-	res.render('index', {
+	res.render('settings', {
 		year: new Date().getFullYear(),
-		page: 'home'
+		page: 'settings'
 	});
 }
