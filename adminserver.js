@@ -1,11 +1,18 @@
 var express = require('express');
 
 module.exports = function(){
-	var adminServer = express();
+	var server = express();
 
-	adminServer.listen(1337, function(){
+	server.listen(1337, function(){
 		console.log('Admin server running on port 1337');
 	});
 
-	return adminServer;
+	server.set('views', './app/admin/views');
+	server.set('view engine', 'ejs');
+
+	server.use(express.static('./public/admin'));
+
+	require('./app/admin/routes/index.routes')(server);
+
+	return server;
 }
