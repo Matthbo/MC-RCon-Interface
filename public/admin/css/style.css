@@ -37,15 +37,15 @@ header button.aside-toggle {
 header button.aside-toggle:focus{
 	outline: 0;
 }
+/*
+section {
+	position: relative;
+}*/
 
 section aside {
 	display: none;
 	padding: 5px 0;
 	background-color: #434343;
-}
-
-section aside ul {
-	list-style: none;
 }
 
 section aside ul li {
@@ -62,6 +62,59 @@ section aside ul li span {
 	margin-left: 10px;
 }
 
+section article {
+	padding: 10px;
+}
+
+section .hotbar {
+	margin: 5px 10px;
+}
+
+section .container {
+	position: relative;
+	display: block;
+	min-width: 256px;
+	min-height: 145px;
+	margin: 10px;
+	padding: 10px;
+	/*border: 1px solid #8d8d8d;*/
+	border-radius: 2px;
+	background-color: #f5f5f5;
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+section .container-fluid {
+	position: relative;
+	display: block;
+	margin: 10px;
+	padding: 10px;
+	/*border: 1px solid #8d8d8d;*/
+	border-radius: 2px;
+	background-color: #f5f5f5;
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+section .container > .action {
+	margin-top: 10px;
+}
+
+section .container > .action > span {
+	float: right;
+}
+
+section .container > .action > span > button {
+	margin-left: 2px;
+}
+
+section .container .info {
+	display: inline-block;
+	color: #4c4c4c;
+}
+
+section .container .info-result {
+	padding-left: 10px;
+}
+
 footer {
 	padding: 10px;
 	text-align: center;
@@ -73,11 +126,95 @@ footer {
 	transform: scaleX(-1);
 }
 
+.btn {
+	padding: 5px 15px;
+	border: 0;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #000;
+	user-select: none;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+}
+
+.btn:focus,
+.btn:active{
+	outline: 0;
+}
+
+.btn:active {
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,.4);
+}
+
+.btn.btn-icon {
+	padding: 5px 8px;
+}
+
+.btn.btn-primary {
+	color: #fff;
+	background-color: #2574A9;
+}
+.btn.btn-green {
+	color: #fff;
+	background-color: #2ECC71;
+}
+.btn.btn-yellow {
+	color: #fff;
+	background-color: #F7CA18;
+}
+.btn.btn-red {
+	color: #fff;
+	background-color: #D91E18;
+}
+
 a {
 	color: inherit;
 	text-decoration: inherit;
 }
 
+button {
+	cursor: pointer;
+}
+
+p {
+	color: #4c4c4c;
+}
+
 ul {
-	text-decoration: none;
+	list-style: none;
+}
+
+@media (min-width: 576px) {
+	section .container {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 992px) {
+	header button.aside-toggle {
+		display: none;
+	}
+
+	section aside {
+		display: block;
+		position: absolute;
+		top: 71.2px;
+		left: 0;
+		bottom: 0;
+	}
+
+	section aside ul li {
+		padding: 8px 16px;
+	}
+
+	section aside ul li span {
+		display: none;
+	}
+
+	section aside ul li a {
+		font-size: 28px;
+	}
+
+	section article{
+		margin-left: 55.36px;
+	}
 }
