@@ -3,18 +3,54 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<title>Viperhosting.tk</title>
 	
+	<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header><h1><a href="/">Viperhosting.tk</a></h1></header>
 	<section>
-		<div class="bg-block"><div id="img"></div></div>
+		<div class="bg-block">
+			<div id="block-img"></div>
+			<div id="chevron"><i class="zmdi zmdi-chevron-down"></i></div>
+		</div>
+
+		<article>
+			<h2>Server status</h2>
+			<div class="server-status">
+				<h3><span class="status-icon status-online"><i class="zmdi zmdi-circle"></i></span> Server 1</h3>
+				<ul class="info">
+					<li>Status:</li>
+					<li>People Online:</li>
+				</ul>
+				<ul class="info info-result">
+					<li>Online</li>
+					<li>3</li>
+				</ul>
+			</div>
+			<div class="server-status">
+				<h3><span class="status-icon status-offline"><i class="zmdi zmdi-circle"></i></span> Server 2</h3>
+				<ul class="info">
+					<li>Status:</li>
+					<li>People Online:</li>
+				</ul>
+				<ul class="info info-result">
+					<li>Offline</li>
+					<li>&nbsp;</li>
+				</ul>
+			</div>
+		</article>
+
+		<article>
+			<h2>Download latest mods</h2>
+		</article>
 	</section>
 	<footer>
 		<small>Matthijs Booman <span class="copyleft">&copy;</span><%=year%></small>
 	</footer>
+
+	<script src="js/jquery-3.2.0.min.js"></script>
 </body>
 </html>
