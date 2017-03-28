@@ -64,11 +64,11 @@ section article {
 }
 
 section article > .server-status {
-	padding: 10px 0;
+	padding: 20px 0;
 }
 
 section article > .server-status + .server-status{
-	border-top: 1px solid #4c4c4c;
+	border-top: 1px solid #818181;
 }
 
 section article > .server-status > h3 > .status-icon {
@@ -89,7 +89,35 @@ section article > .server-status > .info {
 }
 
 section article > .server-status > .info-result {
-	padding-left: 10px;
+	margin-left: 10px;
+}
+
+section article ul.download-list {
+	color: #4c4c4c;
+}
+
+section article ul.download-list li {
+	padding: 10px 0;
+}
+
+section article ul.download-list li + li {
+	border-top: 1px solid #818181;
+}
+
+section article h2 {
+	font-size: 24pt;
+}
+
+section article h3 {
+	font-size: 18pt;
+}
+
+section article ul {
+	font-size: 15pt;
+}
+
+section article ul li.ip {
+	font-size: 12pt;
 }
 
 footer {
@@ -107,6 +135,30 @@ footer {
 a {
 	color: inherit;
 	text-decoration: inherit;
+}
+
+.btn {
+	padding: 5px 15px;
+	border: 0;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #000;
+	user-select: none;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+}
+
+.btn:focus,
+.btn:active{
+	outline: 0;
+}
+
+.btn:active {
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,.4);
+}
+
+.btn-download {
+	color: #fff;
+	background-color: #6875b5;
 }
 
 ul {
@@ -127,5 +179,26 @@ ul {
 		color: #fff;
 		font-size: 50pt;
 		animation: bg-block-chevron 2s alternate infinite;
+	}
+
+	section article {
+		margin: 10px auto;
+		width: 952px;
+	}
+
+	section article > .server-status {
+		margin: 0 20px;
+	}
+
+	section article > .server-status > .info {
+		margin-left: 25px;
+	}
+
+	section article ul.download-list {
+		margin-left: 25px;
+	}
+
+	section article ul li.ip {
+		font-size: inherit;
 	}
 }
