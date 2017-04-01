@@ -14,6 +14,7 @@ module.exports = function(){
 
 	require('./app/admin/routes/index.routes')(server);
 	require('./app/admin/routes/settings.routes')(server);
+	require('./app/admin/routes/api.routes')(server);
 
 	return server;
 }
